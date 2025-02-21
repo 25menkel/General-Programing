@@ -190,14 +190,14 @@ let fakeArray2 = [];
 // let dist = Math.sqrt((obj2[0] - obj1[0])**2 +(obj2[1] - obj1[1])**2);
 // console.log(dist);
 
-let primes = [2, 3, 5, 7, 11, 13, 17, 19];
-let i = 0;
-while (i < primes.length){
-    console.log(primes[i]);
-    i++;
-}
+// let primes = [2, 3, 5, 7, 11, 13, 17, 19];
+// let i = 0;
+// while (i < primes.length){
+//     console.log(primes[i]);
+//     i++;
+// }
 
-console.log(primes.at(-1));
+// console.log(primes.at(-1));
 
 // Array methods
 // .pop() - it finds the last element of the array returns it and deletes it from the array
@@ -208,24 +208,24 @@ console.log(primes.at(-1));
 
 // code to find the sum of all preimes less than 20
 
-let sum = 0;
-while (primes.length > 0) {
-    sum += primes.pop();
-    console.log(primes, sum);
-}
+// let sum = 0;
+// while (primes.length > 0) {
+//     sum += primes.pop();
+//     console.log(primes, sum);
+// }
 
-console.log(sum);
+// console.log(sum);
 
 // the inverse of .pop() is .push()
 // it adds a element to the end of the array
 
-let fruits = ["Apple", "Banana", "Canteloupe"];
+// let fruits = ["Apple", "Banana", "Canteloupe"];
 
-console.log(fruits);
+// console.log(fruits);
 
-fruits.push("watermelon");
+// fruits.push("watermelon");
 
-console.log(fruits);
+// console.log(fruits);
 
 // the problem with both of these is that you can only modify the end of an array
 // you have to use diffrent methd to moddify the middle
@@ -240,10 +240,10 @@ console.log(fruits);
 // console.log(fruits);
 
 // push and unshift can add multiple elements at once
-fruits.push("Orange", "Peach");
-fruits.unshift("Lemon", "pineapple");
+// fruits.push("Orange", "Peach");
+// fruits.unshift("Lemon", "pineapple");
 
-console.log(fruits);
+// console.log(fruits);
 
 // using loops with arrays
 // old style of printing all of the array values
@@ -254,6 +254,35 @@ console.log(fruits);
 
 // there is a loop for this called for...of loop
 
-for (let fruit of fruits) {
-    console.log(fruit);
-}
+// for (let fruit of fruits) {
+//     console.log(fruit);
+// }
+
+// array.length is returning the value of the last index + 1 
+// it is not actualy couning the numbers in the array
+
+let grades = ["A", "A", "B",  , "B", "A"];
+console.log(grades);
+console.log(grades.length);
+
+let badArray = [];
+badArray[314] = "pie";
+console.log(badArray.length);
+console.log(badArray);
+
+
+// A multidimesional array is an array that is in turn made up of more arrays
+
+// exple of array holding xy cord of 5 points
+// 3,4 and 1,2 and 9,15 and 37,11 and 215,1
+let coordinates = [
+    [3,4], 
+    [1,2],
+    [9,15],
+    [37,11],
+    [215,1]
+]
+
+console.log(coordinates[4][0]);
+
+coordinates[4][0]
