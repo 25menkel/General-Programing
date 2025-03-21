@@ -1,0 +1,30 @@
+/* This is a comment */
+
+/* 
+example of css rule:
+div.blod-text {
+    front-weight: 700:
+}
+
+selector {
+    property: value;
+} 
+
+<div> is an html element like <p> or <h#>
+
+<div dosn't carry extra rules with it like p and h tags
+<div> is just an empty container
+
+* is the universal selector. example*/
+
+*{
+    color: rgb(9, 183, 236);
+}
+
+h1{
+    color:blueviolet;
+}
+
+.sad{
+    font-size: x-small;
+}
